@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- keep the line below for OpenProcessing compatibility -->
+	<script src="https://openprocessing.org/openprocessing_sketch.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/addons/p5.sound.min.js"></script>
+	<script src="https://unpkg.com/rita"></script>
+	<script src="celestialBody.js"></script>
+	<script src="star.js"></script>
+	<script src="exoplanet.js"></script>
+	<script src="mySketch.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body> 
+	<h3>Star Database Access</h3>
+	
+	<p>Search by name (case sensitive)</p>
+	
+	<input type="search" id="searchBar" name="searchBar" />
+
+	<button onclick="search()">Search</button> 
+	
+	<p id="sortTimeText"></p>
+	
+	<p id="searchTimeText"></p>
+</body>
+
+</html>
